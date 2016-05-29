@@ -1,0 +1,15 @@
+{
+  "name": "php-fetch-json",
+  "version": "0.0.0",
+  "description": "Easy get json data from RESTful style api interfact.",
+  "homepage": "https://github.com/afeiship/php-fetch-json",
+  "author": {
+    "name": "afei",
+    "email": "1290657123@qq.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.0"
+  }
+}

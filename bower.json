@@ -1,0 +1,24 @@
+{
+  "name": "php-fetch-json",
+  "description": "Easy get json data from RESTful style api interfact.",
+  "main": "dist/php-fetch-json.js",
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "homepage": "https://github.com/afeiship/php-fetch-json",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}
