@@ -1,6 +1,6 @@
 {
   "name": "php-fetch-json",
-  "description": "Easy get json data from RESTful style api interfact.",
+  "description": "Easy get json data from RESTful style api interface.",
   "main": "dist/php-fetch-json.js",
   "authors": [
     "afei"

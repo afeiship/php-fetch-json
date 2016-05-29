@@ -1,7 +1,7 @@
 {
   "name": "php-fetch-json",
   "version": "0.0.0",
-  "description": "Easy get json data from RESTful style api interfact.",
+  "description": "Easy get json data from RESTful style api interface.",
   "homepage": "https://github.com/afeiship/php-fetch-json",
   "author": {
     "name": "afei",
