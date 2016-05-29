@@ -8,11 +8,12 @@
  */
 class FetchJson
 {
-  public static function post($inUrl, $inData, $inHeaders = [])
+  public static function request($inUrl, $inMethod = 'POST', $inData, $inHeaders = [])
   {
     $headers = array_merge([
       'Content-Type: application/json; charset=utf-8',
     ], $inHeaders);
+
 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_POST, 1);
@@ -22,6 +23,8 @@ class FetchJson
     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
     $response = curl_exec($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $inMethod);
     curl_close($ch);
 
     return [
@@ -46,5 +49,20 @@ class FetchJson
       'code' => $httpCode,
       'data' => json_decode($response)
     ];
+  }
+
+  public static function post($inUrl, $inData, $inHeaders = [])
+  {
+    return self::request($inUrl, 'POST', $inData, $inHeaders);
+  }
+
+  public static function put($inUrl, $inData, $inHeaders = [])
+  {
+    return self::request($inUrl, 'PUT', $inData, $inHeaders);
+  }
+
+  public static function delete($inUrl, $inData, $inHeaders = [])
+  {
+    return self::request($inUrl, 'DELETE', $inData, $inHeaders);
   }
 }
