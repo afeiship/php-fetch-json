@@ -18,4 +18,6 @@ $data = [
   'id' => 1
 ];
 $rs = FetchJson::get($url, $data);
+
+
 print_r($rs);
