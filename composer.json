@@ -1,0 +1,12 @@
+{
+    "name": "feizheng/php-fetch-json",
+    "description": "Easy get json data from RESTful style api interface.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "afei",
+            "email": "1290657123@qq.com"
+        }
+    ],
+    "require": {}
+}
