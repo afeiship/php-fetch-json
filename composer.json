@@ -1,5 +1,5 @@
 {
-    "name": "feizheng/php-fetch-json",
+    "name": "afeiship/php-fetch-json",
     "description": "Easy get json data from RESTful style api interface.",
     "license": "MIT",
     "authors": [
